@@ -128,12 +128,10 @@
           </div>
         </div>
       </section>
-      <!-- closes stay-columns -->
 
       <section class="reserve" id="reserve">
         <h2 class="reserve-title">Book your stay today!</h2>
 
-        <!-- Left column: filters -->
         <form
           class="reserve-filters"
           id="reserve-filters"
@@ -204,7 +202,6 @@
           <button type="reset" class="reserve-clear">Clear filters</button>
         </form>
 
-        <!-- Right column: results -->
         <div class="reserve-results" id="reserve-results">
           <p class="reserve-count" id="reserve-count" aria-live="polite"></p>
           <ul class="reserve-list" id="reserve-list"></ul>
@@ -362,7 +359,7 @@
             reserveStatus.textContent = `Reservation request started for ${btn.dataset.name}.`;
         });
 
-        renderPlaces(); // show all matches on page load
+        renderPlaces();
       </script>
     </main>
 
