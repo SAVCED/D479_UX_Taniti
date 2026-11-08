@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islands of Taniti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.png" alt="Islands of Taniti Logo" />
+      </a>
+
+      <p class="tagline">Wonderful tropical Islands of Taniti</p>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li class="has-dropdown">
+            <a href="stay.html">Where to Stay</a>
+            <ul class="dropdown">
+              <li><a href="stay.html">Hotels and Hostels</a></li>
+              <li><a href="stay.html">Resorts</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="entertainment.html">Entertainment</a>
+            <ul class="dropdown">
+              <li><a href="entertainment.html#beaches">Beaches</a></li>
+              <li>
+                <a href="entertainment.html#rainforestAndVolcano"
+                  >Rainforest and Volcano</a
+                >
+              </li>
+              <li><a href="entertainment.html#City">Taniti City</a></li>
+              <li>
+                <a href="entertainment.html#foodAndDrink">Food and Drink</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="travel.html">Travel</a>
+            <ul class="dropdown">
+              <li><a href="travel.html#airAndSea">Air and Sea Travel</a></li>
+              <li>
+                <a href="travel.html#onIslandTransport"
+                  >Transportation on the Island</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="FAQs.html">FAQs</a>
+            <ul class="dropdown">
+              <li><a href="FAQs.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <form class="search" role="search" action="/search">
+          <label class="visually-hidden" for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="Search.." />
+          <button type="submit" aria-label="Submit search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="m15 15 6 6" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="index.html">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z" />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li><a href="travel.html">Travel</a></li>
+      </ol>
+    </nav>
+
+    <main class="page-main">
+      <section
+        class="travel-hero"
+        id="airAndSea"
+        style="--hero-img: url(&quot;assets/air.jpg&quot;)"
+      >
+        <h2>Getting to Taniti</h2>
+
+        <div
+          class="stay-toggle"
+          role="group"
+          aria-label="Choose air or sea travel"
+        >
+          <button type="button" data-type="air" aria-pressed="true">Air</button>
+          <button type="button" data-type="sea" aria-pressed="false">
+            Sea
+          </button>
+        </div>
+
+        <div class="travel-text" id="travel-text" aria-live="polite">
+          <h3>Air Travel</h3>
+          <p>
+            Travel by air to our very own Taniti International Airport (TIA).
+            <br /><br />
+            There are two outgoing flights per day, at 10:00 and 16:00 island
+            time. <br /><br />
+            Taniti is happy to announce that we are expanding our airport!
+            Within the next few years, we will be adding a new terminal to
+            accomodate for larger jets.
+          </p>
+        </div>
+      </section>
+
+      <!-- Row 2: Transportation on the Island -->
+      <section class="island-transport" id="onIslandTransport">
+        <h2>Transportation on the Island</h2>
+
+        <div class="transport-grid">
+          <div class="stay-col">
+            <img src="assets/bus.jpg" alt="A bus on Taniti" />
+            <!-- source: https://unsplash.com/photos/a-red-bus-drives-through-a-lush-green-forest-kkQaPA_Uqzs-->
+            <div class="stay-text">
+              <h3>Buses</h3>
+              <p>
+                We have 27 active busses that traverse our islands, offering an
+                affordable way to travel and explore. <br /><br />
+                Buses run from 06:00 to 00:00 every day. You can catch them at
+                our conviently located bus stops around the islands.
+              </p>
+            </div>
+          </div>
+
+          <div class="stay-col">
+            <img src="assets/taxi.jpg" alt="A taxi on Taniti" />
+            <div class="stay-text">
+              <h3>Taxis / Cars</h3>
+              <p>
+                Taxis and car rental options are available for those who prefer
+                to ride solo. Reserve your rental car at our airport and seaport
+                kiosks.<br /><br />
+                Our taxi services all operate 24 hours a day. You can order a
+                taxi any time at (999) 080-8888.
+              </p>
+            </div>
+          </div>
+
+          <div class="stay-col">
+            <img src="assets/bike.jpg" alt="Bicycles on Taniti" />
+            <!-- source: https://unsplash.com/photos/family-cycling-on-a-sandy-path-lined-with-palm-trees-MURUwMSlA4U-->
+            <div class="stay-text">
+              <h3>Bikes</h3>
+              <p>
+                Bikes are an affordable and fun way to explore the island! We
+                have single and tandem bikes available for visitors to use.<br /><br />
+                Bikes can be rented from authorized merchants at most beachfront
+                properties.
+              </p>
+            </div>
+          </div>
+
+          <div class="stay-col">
+            <img src="assets/walking.jpg" alt="Walking on Taniti" />
+            <!--source: https://unsplash.com/photos/people-walking-on-street-aTMOk0f_K20-->
+            <div class="stay-text">
+              <h3>Walking</h3>
+              <p>
+                Taniti is one of the most walkable islands in the Pacific. With
+                many walking paths being created along the beaches and within
+                our rainforests, you will always be able to see beautiful sites
+                and take in the nature. <br /><br />
+                Walking maps are available at all airport and seaport kiosks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const travelData = {
+        air: {
+          img: "assets/air.jpg", <!-- source: https://unsplash.com/photos/white-and-red-boat-on-sea-during-daytime-Xo7MkRUKNPQ-->
+          title: "Air Travel",
+          text: "Travel by air to our very own Taniti International Airport (TIA). <br /><br /> There are two outgoing flights per day, at 10:00 and 16:00 island time. <br /><br /> Taniti is happy to announce that we are expanding our airport! Within the next few years, we will be adding a new terminal to accomodate for larger jets.",
+        },
+        sea: {
+          img: "assets/sea.jpg", <!-- source: https://unsplash.com/photos/a-cruise-ship-is-docked-at-a-small-island-B_BcXW5UFjA-->
+          title: "Sea Travel",
+          text: "Taniti has become a much more common cruise ship destination over the last decade. We love seeing all of the new faces and cultures that travellers have brought to the island! <br /><br /> Our local charter boats love to show travellers the island and help share in our wonderful Pacific culture! ",
+        },
+      };
+
+      const travelHero = document.getElementById("airAndSea");
+      const travelText = document.getElementById("travel-text");
+      const travelButtons = document.querySelectorAll(
+        "#airAndSea .stay-toggle button",
+      );
+
+      travelButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const d = travelData[btn.dataset.type];
+          travelHero.style.setProperty("--hero-img", `url('${d.img}')`);
+          travelText.innerHTML = `<h3>${d.title}</h3><p>${d.text}</p>`;
+          travelButtons.forEach((b) =>
+            b.setAttribute("aria-pressed", b === btn),
+          );
+        });
+      });
+    </script>
+
+    <footer class="site-footer">
+      <div class="footer-about">
+        <p>Wonderful Islands of Taniti in the tropical Pacific</p>
+        <br />
+        <a href="index.html"
+          ><img
+            src="assets/logo.png"
+            alt="Islands of Taniti Logo"
+            width="50%"
+            height="50%"
+        /></a>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <h3>Quick Links:</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contact Us:</h3>
+        <p>
+          Email:
+          <a href="mailto:taniti@IslandsofTaniti.gov"
+            >taniti@IslandsofTaniti.gov</a
+          ><br />
+          Phone: (123) 456-7899<br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

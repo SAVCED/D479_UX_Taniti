@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islands of Taniti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.png" alt="Islands of Taniti Logo" />
+      </a>
+
+      <p class="tagline">Wonderful tropical Islands of Taniti</p>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li class="has-dropdown">
+            <a href="stay.html">Where to Stay</a>
+            <ul class="dropdown">
+              <li><a href="stay.html">Hotels and Hostels</a></li>
+              <li><a href="stay.html">Resorts</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="entertainment.html">Entertainment</a>
+            <ul class="dropdown">
+              <li><a href="entertainment.html#beaches">Beaches</a></li>
+              <li>
+                <a href="entertainment.html#rainforestAndVolcano"
+                  >Rainforest and Volcano</a
+                >
+              </li>
+              <li><a href="entertainment.html#City">Taniti City</a></li>
+              <li>
+                <a href="entertainment.html#foodAndDrink">Food and Drink</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="travel.html">Travel</a>
+            <ul class="dropdown">
+              <li><a href="travel.html#airAndSea">Air and Sea Travel</a></li>
+              <li>
+                <a href="travel.html#onIslandTransport"
+                  >Transportation on the Island</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="FAQs.html">FAQs</a>
+            <ul class="dropdown">
+              <li><a href="FAQs.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <form class="search" role="search" action="/search">
+          <label class="visually-hidden" for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="Search.." />
+          <button type="submit" aria-label="Submit search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="m15 15 6 6" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="index.html">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z" />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li><a href="FAQs.html">FAQs</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <main
+        class="faq-page"
+        style="--faq-img: url(&quot;assets/island.jpg&quot;)"
+      >
+        <!--source: https://unsplash.com/photos/green-palm-trees-on-beach-under-blue-sky-and-white-clouds-during-daytime-JGmuEnZ8Yxk-->
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="info-sections faq-list">
+          <details>
+            <summary>What is the drinking age on Taniti?</summary>
+            <div class="details-body">
+              <p>
+                The drinking age on Taniti is 18, although is not strictly
+                enforced.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>What are the alcohol laws on Taniti?</summary>
+            <div class="details-body">
+              <p>
+                Alcohol is not allowed to be served or sold between the hours of
+                midnight and 9:00 a.m.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>What currency is used on the island?</summary>
+            <div class="details-body">
+              <p>
+                Taniti uses the U.S. dollar as its currency, but many businesses
+                will also accept euros and yen. Several banks facilitate
+                currency exchange, and many businesses accept major credit
+                cards.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Are healthcare services available on the islands?</summary>
+            <div class="details-body">
+              <p>
+                There is one hospital and several clinics. The hospital has many
+                multilingual employees.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Is English spoken on Taniti?</summary>
+            <div class="details-body">
+              <p>
+                Many younger Tanitians speak fluent English. Very little English
+                is spoken in rural areas, especially by the older residents.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Do I need to worry about pickpocketers?</summary>
+            <div class="details-body">
+              <p>
+                Violent crime is very rare on Taniti, but as tourism increases,
+                there are more reports of pickpocketing and other petty crimes.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>What voltage are the power outlets?</summary>
+            <div class="details-body">
+              <p>
+                Power outlets are 120 volts (the same as in the United States).
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Are there Tanitian cultural norms I should be aware of?
+            </summary>
+            <div class="details-body">
+              <p>
+                Taniti enjoys a large number of national holidays, and many
+                tourist attractions and restaurants will be closed on holidays,
+                so visitors should plan accordingly.
+              </p>
+            </div>
+          </details>
+        </div>
+      </main>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-about">
+        <p>Wonderful Islands of Taniti in the tropical Pacific</p>
+        <br />
+        <a href="index.html"
+          ><img
+            src="assets/logo.png"
+            alt="Islands of Taniti Logo"
+            width="50%"
+            height="50%"
+        /></a>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <h3>Quick Links:</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contact Us:</h3>
+        <p>
+          Email:
+          <a href="mailto:taniti@IslandsofTaniti.gov"
+            >taniti@IslandsofTaniti.gov</a
+          ><br />
+          Phone: (123) 456-7899<br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

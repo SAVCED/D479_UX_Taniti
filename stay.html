@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islands of Taniti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.png" alt="Islands of Taniti Logo" />
+      </a>
+
+      <p class="tagline">Wonderful tropical Islands of Taniti</p>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li class="has-dropdown">
+            <a href="stay.html">Where to Stay</a>
+            <ul class="dropdown">
+              <li><a href="stay.html">Hotels and Hostels</a></li>
+              <li><a href="stay.html">Resorts</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="entertainment.html">Entertainment</a>
+            <ul class="dropdown">
+              <li><a href="entertainment.html#beaches">Beaches</a></li>
+              <li>
+                <a href="entertainment.html#rainforestAndVolcano"
+                  >Rainforest and Volcano</a
+                >
+              </li>
+              <li><a href="entertainment.html#City">Taniti City</a></li>
+              <li>
+                <a href="entertainment.html#foodAndDrink">Food and Drink</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="travel.html">Travel</a>
+            <ul class="dropdown">
+              <li><a href="travel.html#airAndSea">Air and Sea Travel</a></li>
+              <li>
+                <a href="travel.html#onIslandTransport"
+                  >Transportation on the Island</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="FAQs.html">FAQs</a>
+            <ul class="dropdown">
+              <li><a href="FAQs.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <form class="search" role="search" action="/search">
+          <label class="visually-hidden" for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="Search.." />
+          <button type="submit" aria-label="Submit search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="m15 15 6 6" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="index.html">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z" />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li><a href="stay.html">Where to Stay</a></li>
+      </ol>
+    </nav>
+
+    <main class="page-main">
+      <section class="stay-columns">
+        <div class="stay-col">
+          <img id="stay-img" src="assets/hotel.jpg" alt="A Taniti hotel" />
+
+          <div
+            class="stay-toggle"
+            role="group"
+            aria-label="Choose accommodation type"
+          >
+            <button type="button" data-type="hotel" aria-pressed="true">
+              Hotel
+            </button>
+            <button type="button" data-type="hostel" aria-pressed="false">
+              Hostel
+            </button>
+          </div>
+
+          <div class="stay-text" id="stay-text" aria-live="polite">
+            <h2>Hotels</h2>
+            <p>
+              Taniti offers a large selection of top tier hotels. We pride
+              ourselves in service and comfortability. Many of our hotels have
+              great views of the ocean while also being close to the city and
+              the rainforests. <br /><br />
+              Now featuring comfortable rooms in Taniti City and along the
+              coast, with private bathrooms, air conditioning, and easy access
+              to restaurants and transport.
+            </p>
+          </div>
+        </div>
+
+        <div class="stay-col">
+          <img src="assets/resort.jpg" alt="A beachfront resort on Taniti" />
+          <!-- source: https://unsplash.com/photos/woman-in-overwater-villa-pool-TEFh8ZXe57k -->
+
+          <div class="stay-text">
+            <h2>Resorts</h2>
+            <p>
+              Full-service beachfront resorts with pools, spas, on-site dining,
+              and organized excursions to the rainforest and volcano. Offering
+              many all inclusive options. <br /><br />
+              Plenty of dining options including our very own 1-Michellin star
+              restaurant, Pisce de Romano. Located in the beautiful Sunset
+              Villas Resort. <br /><br />
+              Enjoy full service spas, yoga and fitness centers, as well as
+              private cabanas on the most luxiourious sides of the islands.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- closes stay-columns -->
+
+      <section class="reserve" id="reserve">
+        <h2 class="reserve-title">Book your stay today!</h2>
+
+        <!-- Left column: filters -->
+        <form
+          class="reserve-filters"
+          id="reserve-filters"
+          aria-label="Filter places to stay"
+        >
+          <fieldset>
+            <legend>Type of stay</legend>
+            <label
+              ><input type="checkbox" name="type" value="hotel" /> Hotel</label
+            >
+            <label
+              ><input type="checkbox" name="type" value="hostel" />
+              Hostel</label
+            >
+            <label
+              ><input type="checkbox" name="type" value="resort" />
+              Resort</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Max price per night</legend>
+            <input
+              type="range"
+              id="price-range"
+              min="30"
+              max="500"
+              step="10"
+              value="500"
+            />
+            <output id="price-output" for="price-range">Up to $500</output>
+          </fieldset>
+
+          <fieldset>
+            <legend>Amenities</legend>
+            <label
+              ><input type="checkbox" name="amenity" value="wifi" />
+              Wi-Fi</label
+            >
+            <label
+              ><input type="checkbox" name="amenity" value="ac" /> Air
+              conditioning</label
+            >
+            <label
+              ><input type="checkbox" name="amenity" value="pool" /> Pool</label
+            >
+            <label
+              ><input type="checkbox" name="amenity" value="breakfast" />
+              Breakfast</label
+            >
+            <label
+              ><input type="checkbox" name="amenity" value="beach" /> Beach
+              access</label
+            >
+            <label
+              ><input type="checkbox" name="amenity" value="spa" /> Spa</label
+            >
+            <label
+              ><input type="checkbox" name="amenity" value="kitchen" /> Shared
+              kitchen</label
+            >
+            <label
+              ><input type="checkbox" name="amenity" value="parking" />
+              Parking</label
+            >
+          </fieldset>
+
+          <button type="reset" class="reserve-clear">Clear filters</button>
+        </form>
+
+        <!-- Right column: results -->
+        <div class="reserve-results" id="reserve-results">
+          <p class="reserve-count" id="reserve-count" aria-live="polite"></p>
+          <ul class="reserve-list" id="reserve-list"></ul>
+          <p class="reserve-status" id="reserve-status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <script>
+        const stayData = {
+          hotel: {
+            img: "assets/hotel.jpg", // source: https://unsplash.com/photos/brown-wooden-picnic-table-near-palm-trees-and-body-of-water-during-daytime-7EHUvrQ6Ahc
+            alt: "A Taniti hotel",
+            title: "Hotels",
+            text: "Taniti offers a large selection of top tier hotels. We pride ourselves in service and comfortability. Many of our hotels have great views of the ocean while also being close to the city and the rainforests. <br /><br /> Now featuring comfortable rooms in Taniti City and along the coast, with private bathrooms, air conditioning, and easy access to restaurants and transport.",
+          },
+          hostel: {
+            img: "assets/hostel.jpg", // source: https://unsplash.com/photos/a-room-filled-with-lots-of-bunk-beds-next-to-a-window-TzMGehZmocI
+            alt: "A Taniti hostel common room",
+            title: "Hostels",
+            text: "Budget-friendly dorms and private rooms with shared kitchens and lounges, a great way to meet other travelers. <br \><br \> Plenty of beach access hostels have been formed around the perimiters of the islands. Great for travelers who like to explore.",
+          },
+        };
+
+        const stayImg = document.getElementById("stay-img");
+        const stayText = document.getElementById("stay-text");
+        const stayButtons = document.querySelectorAll(".stay-toggle button");
+
+        stayButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const d = stayData[btn.dataset.type];
+            stayImg.src = d.img;
+            stayImg.alt = d.alt;
+            stayText.innerHTML = `<h2>${d.title}</h2><p>${d.text}</p>`;
+            stayButtons.forEach((b) =>
+              b.setAttribute("aria-pressed", b === btn),
+            );
+          });
+        });
+      </script>
+
+      <script>
+        const places = [
+          {
+            name: "Harbor View Hotel",
+            type: "hotel",
+            price: 120,
+            amenities: ["wifi", "ac", "breakfast", "parking"],
+          },
+          {
+            name: "Palm Court Hotel",
+            type: "hotel",
+            price: 95,
+            amenities: ["wifi", "ac", "pool"],
+          },
+          {
+            name: "City Center Inn",
+            type: "hotel",
+            price: 80,
+            amenities: ["wifi", "ac", "parking"],
+          },
+          {
+            name: "Coconut Hostel",
+            type: "hostel",
+            price: 35,
+            amenities: ["wifi", "kitchen", "breakfast"],
+          },
+          {
+            name: "Backpackers Bay",
+            type: "hostel",
+            price: 45,
+            amenities: ["wifi", "kitchen", "beach"],
+          },
+          {
+            name: "Reef Resort",
+            type: "resort",
+            price: 210,
+            amenities: ["wifi", "ac", "pool", "beach", "breakfast"],
+          },
+          {
+            name: "Lagoon Resort & Spa",
+            type: "resort",
+            price: 320,
+            amenities: ["wifi", "ac", "pool", "spa", "beach", "breakfast"],
+          },
+          {
+            name: "Sunset Villas Resort",
+            type: "resort",
+            price: 450,
+            amenities: ["wifi", "ac", "pool", "spa", "beach", "parking"],
+          },
+        ];
+
+        const amenityLabels = {
+          wifi: "Wi-Fi",
+          ac: "Air conditioning",
+          pool: "Pool",
+          breakfast: "Breakfast",
+          beach: "Beach access",
+          spa: "Spa",
+          kitchen: "Shared kitchen",
+          parking: "Parking",
+        };
+
+        const reserveForm = document.getElementById("reserve-filters");
+        const reserveList = document.getElementById("reserve-list");
+        const reserveCount = document.getElementById("reserve-count");
+        const reserveStatus = document.getElementById("reserve-status");
+        const priceRange = document.getElementById("price-range");
+        const priceOutput = document.getElementById("price-output");
+
+        function checkedValues(name) {
+          return [
+            ...reserveForm.querySelectorAll(`input[name="${name}"]:checked`),
+          ].map((i) => i.value);
+        }
+
+        function renderPlaces() {
+          const types = checkedValues("type");
+          const wanted = checkedValues("amenity");
+          const maxPrice = Number(priceRange.value);
+          priceOutput.textContent = `Up to $${maxPrice}`;
+
+          const matches = places.filter(
+            (p) =>
+              (types.length === 0 || types.includes(p.type)) &&
+              p.price <= maxPrice &&
+              wanted.every((a) => p.amenities.includes(a)),
+          );
+
+          reserveStatus.textContent = "";
+          reserveCount.textContent = `${matches.length} match${matches.length === 1 ? "" : "es"} found`;
+
+          reserveList.innerHTML = matches
+            .map(
+              (p) => `
+      <li class="reserve-card">
+        <div>
+          <h3>${p.name}</h3>
+          <p class="reserve-type">${p.type[0].toUpperCase() + p.type.slice(1)} &middot; $${p.price} / night</p>
+          <p class="reserve-tags">${p.amenities.map((a) => `<span>${amenityLabels[a]}</span>`).join("")}</p>
+        </div>
+        <button type="button" class="reserve-select" data-name="${p.name}">Reserve</button>
+      </li>
+    `,
+            )
+            .join("");
+        }
+
+        reserveForm.addEventListener("input", renderPlaces);
+        reserveForm.addEventListener("reset", () => setTimeout(renderPlaces));
+
+        reserveList.addEventListener("click", (e) => {
+          const btn = e.target.closest(".reserve-select");
+          if (btn)
+            reserveStatus.textContent = `Reservation request started for ${btn.dataset.name}.`;
+        });
+
+        renderPlaces(); // show all matches on page load
+      </script>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-about">
+        <p>Wonderful Islands of Taniti in the tropical Pacific</p>
+        <br />
+        <a href="index.html"
+          ><img
+            src="assets/logo.png"
+            alt="Islands of Taniti Logo"
+            width="50%"
+            height="50%"
+        /></a>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <h3>Quick Links:</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contact Us:</h3>
+        <p>
+          Email:
+          <a href="mailto:taniti@IslandsofTaniti.gov"
+            >taniti@IslandsofTaniti.gov</a
+          ><br />
+          Phone: (123) 456-7899<br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islands of Taniti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.png" alt="Islands of Taniti Logo" />
+      </a>
+
+      <p class="tagline">Wonderful tropical Islands of Taniti</p>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li class="has-dropdown">
+            <a href="stay.html">Where to Stay</a>
+            <ul class="dropdown">
+              <li><a href="stay.html">Hotels and Hostels</a></li>
+              <li><a href="stay.html">Resorts</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="entertainment.html">Entertainment</a>
+            <ul class="dropdown">
+              <li><a href="entertainment.html#beaches">Beaches</a></li>
+              <li>
+                <a href="entertainment.html#rainforestAndVolcano"
+                  >Rainforest and Volcano</a
+                >
+              </li>
+              <li><a href="entertainment.html#City">Taniti City</a></li>
+              <li>
+                <a href="entertainment.html#foodAndDrink">Food and Drink</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="travel.html">Travel</a>
+            <ul class="dropdown">
+              <li><a href="travel.html#airAndSea">Air and Sea Travel</a></li>
+              <li>
+                <a href="travel.html#onIslandTransport"
+                  >Transportation on the Island</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="FAQs.html">FAQs</a>
+            <ul class="dropdown">
+              <li><a href="FAQs.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <form class="search" role="search" action="/search">
+          <label class="visually-hidden" for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="Search.." />
+          <button type="submit" aria-label="Submit search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="m15 15 6 6" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="index.html">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z" />
+            </svg>
+            Home
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+    <main>
+      <section class="landing">
+        <img
+          class="landing-photo"
+          src="assets/landing.jpg"
+          alt="Aerial view of the Islands of Taniti"
+        /><!-- source: https://unsplash.com/photos/coastal-town-with-blue-water-and-distant-hills-H5SWkmDs4NA-->
+        <div class="landing-text">
+          <h1>Welcome to the Islands of Taniti</h1>
+          <p>
+            White sand beaches, lush rainforest, and a glowing volcano set in
+            the tropical Pacific. While the island has an area of less than 500
+            square miles, the terrain is varied and includes both sandy and
+            rocky beaches, a small but safe harbor, lush tropical rainforests,
+            and a mountainous interior that includes a small, active volcano.
+            Taniti has an indigenous population of about 20,000. <br /><br />
+            Check out what Taniti has to offer. We can't wait to see you!
+          </p>
+        </div>
+      </section>
+
+      <section class="home-links" aria-label="Explore the website">
+        <a class="home-card" href="stay.html">
+          <img src="assets/home-stay.jpg" alt="A beachfront resort" />
+          <!--source: https://unsplash.com/photos/people-on-beach-during-daytime-iso9ebB7itw-->
+          <span>Where to Stay</span>
+        </a>
+        <a class="home-card" href="entertainment.html">
+          <img src="assets/home-entertainment.jpg" alt="A white sand beach" />
+          <!--source: https://unsplash.com/photos/time-lapse-photography-of-waterfalls-JOfW3MPjVp4-->
+          <span>Entertainment</span>
+        </a>
+        <a class="home-card" href="travel.html">
+          <!--source: https://unsplash.com/photos/a-group-of-people-sitting-on-a-boat-in-the-water-cuXy50k7ysI-->
+          <img
+            src="assets/home-travel.jpg"
+            alt="A ferry arriving at the island"
+          />
+          <span>Travel</span>
+        </a>
+        <a class="home-card" href="FAQs.html">
+          <img src="assets/home-faqs.jpg" alt="A signpost on the beach" />
+          <!--source: https://unsplash.com/photos/a-sign-that-says-beach-access-no-motorized-vehicles-enmfwy6HcSA-->
+          <span>FAQs</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-about">
+        <p>Wonderful Islands of Taniti in the tropical Pacific</p>
+        <br />
+        <a href="index.html"
+          ><img
+            src="assets/logo.png"
+            alt="Islands of Taniti Logo"
+            width="50%"
+            height="50%"
+        /></a>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <h3>Quick Links:</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contact Us:</h3>
+        <p>
+          Email:
+          <a href="mailto:taniti@IslandsofTaniti.gov"
+            >taniti@IslandsofTaniti.gov</a
+          ><br />
+          Phone: (123) 456-7899<br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

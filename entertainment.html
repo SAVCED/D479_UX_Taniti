@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islands of Taniti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.png" alt="Islands of Taniti Logo" />
+      </a>
+
+      <p class="tagline">Wonderful tropical Islands of Taniti</p>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li class="has-dropdown">
+            <a href="stay.html">Where to Stay</a>
+            <ul class="dropdown">
+              <li><a href="stay.html">Hotels and Hostels</a></li>
+              <li><a href="stay.html">Resorts</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="entertainment.html">Entertainment</a>
+            <ul class="dropdown">
+              <li><a href="entertainment.html#beaches">Beaches</a></li>
+              <li>
+                <a href="entertainment.html#rainforestAndVolcano"
+                  >Rainforest and Volcano</a
+                >
+              </li>
+              <li><a href="entertainment.html#City">Taniti City</a></li>
+              <li>
+                <a href="entertainment.html#foodAndDrink">Food and Drink</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="travel.html">Travel</a>
+            <ul class="dropdown">
+              <li><a href="travel.html#airAndSea">Air and Sea Travel</a></li>
+              <li>
+                <a href="travel.html#onIslandTransport"
+                  >Transportation on the Island</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="FAQs.html">FAQs</a>
+            <ul class="dropdown">
+              <li><a href="FAQs.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <form class="search" role="search" action="/search">
+          <label class="visually-hidden" for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="Search.." />
+          <button type="submit" aria-label="Submit search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="m15 15 6 6" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="index.html">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z" />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+      </ol>
+    </nav>
+
+    <div class="page-layout">
+      <aside class="side-nav">
+        <nav aria-label="On this page">
+          <ul>
+            <li><a href="#beaches">Beaches</a></li>
+            <li><a href="#rainforestAndVolcano">Rainforest and Volcano</a></li>
+            <li><a href="#City">Taniti City</a></li>
+            <li><a href="#foodAndDrink">Food and Drink</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="page-main">
+        <section class="ent-row ent-cream" id="beaches">
+          <div class="ent-image">
+            <img src="assets/beaches.jpg" alt="A white sand beach on Taniti" />
+            <!-- source https://unsplash.com/photos/coconut-tree-on-beach-DH_u2aV3nGM-->
+          </div>
+          <div class="ent-text">
+            <h2>Beaches</h2>
+            <p>
+              Taniti's coastline offers calm lagoons for swimming, reefs for
+              snorkeling, and long stretches of white sand perfect for sunset
+              walks. <br /><br />
+              Enjoy snorkeling, swimming, surfing, and parasailing along our
+              coastlines. <br /><br />
+              Join our expert fishermen on a chartered fishing tour!
+            </p>
+          </div>
+        </section>
+
+        <section class="ent-row ent-blue ent-reverse" id="rainforestAndVolcano">
+          <div class="ent-image">
+            <img
+              id="nature-img"
+              src="assets/rainforest.jpg"
+              alt="Taniti rainforest"
+            />
+            <!-- source:https://unsplash.com/photos/a-wooden-walkway-in-the-middle-of-a-forest-kYqk5kxs6uA -->
+            <div
+              class="stay-toggle"
+              role="group"
+              aria-label="Choose rainforest or volcano"
+            >
+              <button type="button" data-type="rainforest" aria-pressed="true">
+                Rainforest
+              </button>
+              <button type="button" data-type="volcano" aria-pressed="false">
+                Volcano
+              </button>
+            </div>
+          </div>
+          <div class="ent-text" id="nature-text" aria-live="polite">
+            <h2>Rainforest</h2>
+            <p>
+              Guided trails wind through dense tropical canopy past waterfalls,
+              wild orchids, and native birds found nowhere else in the Pacific.
+              <br /><br />
+              For the thrill seekers, try out our ziplines through the
+              rainforest!
+            </p>
+          </div>
+        </section>
+
+        <section class="ent-row ent-cream" id="City">
+          <div class="ent-image">
+            <img src="assets/city.jpg" alt="Taniti City waterfront" />
+            <!-- source: https://unsplash.com/photos/mykonos-town-harbor-and-windmills-xLuDstkYxbQ -->
+          </div>
+          <div class="ent-text">
+            <h2>Taniti City</h2>
+            <p>
+              The island's capital features open-air markets, museums, live
+              music venues, and a lively waterfront promenade. <br /><br />
+              There is fun for the whole family with our arcades, bowling alley,
+              and movie theater. <br /><br />
+              Adults may enjoy our numerous pubs, including a microbrewery and
+              our nightclub featuring the islands best musicians.
+            </p>
+          </div>
+        </section>
+
+        <section class="ent-row ent-blue ent-reverse" id="foodAndDrink">
+          <div class="ent-image">
+            <img
+              src="assets/food.jpg"
+              alt="Fresh seafood and tropical drinks"
+            />
+            <!-- source:https://unsplash.com/photos/a-man-and-a-woman-sitting-at-a-table-with-a-plate-of-food-dCBGMFARncQ -->
+          </div>
+          <div class="ent-text">
+            <h2>Food and Drink</h2>
+            <p>
+              Enjoy fresh-caught seafood, tropical fruit, and local specialties
+              at beachside grills, family restaurants, and street food stalls.
+              <br /><br />
+              You don't want to miss our very own Michellin star restaurant,
+              Pisce de Romano! Located within our Sunset Villas Resort.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <script>
+        const natureData = {
+          rainforest: {
+            img: "assets/rainforest.jpg", <!-- source:https://unsplash.com/photos/a-wooden-walkway-in-the-middle-of-a-forest-kYqk5kxs6uA -->
+            alt: "Taniti rainforest",
+            title: "Rainforest",
+            text: "Guided trails wind through dense tropical canopy past waterfalls, wild orchids, and native birds found nowhere else in the Pacific. <br /><br /> For the thrill seekers, try out our ziplines through the rainforest!",
+          },
+          volcano: {
+            img: "assets/volcano.jpg", <!-- source: https://unsplash.com/photos/a-beach-with-a-mountain-in-the-background-ul_L9MW7P6g-->
+            alt: "Taniti volcano",
+            title: "Volcano",
+            text: "With our own active volcano, Mount Vormir, see the powers of the earth up close! <br /><br /> Hike to the crater rim for sweeping views, or join a sunrise tour to see steaming vents and black lava fields up close.",
+          },
+        };
+
+        const natureImg = document.getElementById("nature-img");
+        const natureText = document.getElementById("nature-text");
+        const natureButtons = document.querySelectorAll(
+          "#rainforestAndVolcano .stay-toggle button",
+        );
+
+        natureButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const d = natureData[btn.dataset.type];
+            natureImg.src = d.img;
+            natureImg.alt = d.alt;
+            natureText.innerHTML = `<h2>${d.title}</h2><p>${d.text}</p>`;
+            natureButtons.forEach((b) =>
+              b.setAttribute("aria-pressed", b === btn),
+            );
+          });
+        });
+      </script>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-about">
+        <p>Wonderful Islands of Taniti in the tropical Pacific</p>
+        <br />
+        <a href="index.html"
+          ><img
+            src="assets/logo.png"
+            alt="Islands of Taniti Logo"
+            width="50%"
+            height="50%"
+        /></a>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <h3>Quick Links:</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contact Us:</h3>
+        <p>
+          Email:
+          <a href="mailto:taniti@IslandsofTaniti.gov"
+            >taniti@IslandsofTaniti.gov</a
+          ><br />
+          Phone: (123) 456-7899<br />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
